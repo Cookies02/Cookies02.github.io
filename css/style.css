@@ -860,3 +860,21 @@ html {
   font-family: 'Press Start 2P', cursive;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+.mute-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.mute-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
