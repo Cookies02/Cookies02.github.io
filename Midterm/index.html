@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Encyclopedia</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets\images\elden_ring_icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#home" class="nav-item" data-music="home-music">Home</a>
+            <a href="#ammos" class="nav-item" data-music="ammos-music">Ammos</a>
+            <a href="#armors" class="nav-item" data-music="armors-music">Armors</a>
+            <a href="#ashes" class="nav-item" data-music="ashes-music">Ashes of War</a>
+            <a href="#bosses" class="nav-item" data-music="bosses-music">Bosses</a>
+            <a href="#classes" class="nav-item" data-music="classes-music">Classes</a>
+            <a href="#creatures" class="nav-item" data-music="creatures-music">Creatures</a>
+            <a href="#incantations" class="nav-item" data-music="incantations-music">Incantations</a>
+            <a href="#items" class="nav-item" data-music="items-music">Items</a>
+            <a href="#locations" class="nav-item" data-music="locations-music">Locations</a>
+            <a href="#NPCs" class="nav-item" data-music="NPCs-music">NPCs</a>
+            <a href="#shields" class="nav-item" data-music="shields-music">Shields</a>
+            <a href="#sorceries" class="nav-item" data-music="sorceries-music">Sorceries</a>
+            <a href="#spirits" class="nav-item" data-music="spirits-music">Spirits</a>
+            <a href="#talismans" class="nav-item" data-music="talismans-music">Talismans</a>
+            <a href="#weapons" class="nav-item" data-music="weapons-music">Weapons</a>
+        </div>
+        <audio id="home-music" src="assets/music/home.mp3"></audio>
+        <audio id="ammos-music" src="assets/music/ammos.mp3"></audio>
+        <audio id="armors-music" src="assets/music/armors.mp3"></audio>
+        <audio id="ashes-music" src="assets/music/ashes.mp3"></audio>
+        <audio id="bosses-music" src="assets/music/bosses.mp3"></audio>
+        <audio id="classes-music" src="assets/music/classes.mp3"></audio>
+        <audio id="creatures-music" src="assets/music/creatures.mp3"></audio>
+        <audio id="incantations-music" src="assets/music/incantations.mp3"></audio>
+        <audio id="items-music" src="assets/music/items.mp3"></audio>
+        <audio id="locations-music" src="assets/music/locations.mp3"></audio>
+        <audio id="NPCs-music" src="assets/music/NPCs.mp3"></audio>
+        <audio id="shields-music" src="assets/music/shields.mp3"></audio>
+        <audio id="sorceries-music" src="assets/music/sorceries.mp3"></audio>
+        <audio id="spirits-music" src="assets/music/spirits.mp3"></audio>
+        <audio id="talismans-music" src="assets/music/talismans.mp3"></audio>
+        <audio id="weapons-music" src="assets/music/weapons.mp3"></audio>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="assets/videos/home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to the Elden Ring Encyclopedia</h1>
+            <p>Explore the Lands Between and uncover its secrets.</p>
+            <br>
+            <input type="text" id="search-bar" placeholder="Search..." class="search-bar">
+        </div>
+    </section>
+
+    <section id="ammos">
+        <h2>Ammos</h2>
+        <div id="ammos-container"></div>
+    </section>
+
+    <section id="armors">
+        <h2>Armors</h2>
+        <div id="armors-container"></div>
+    </section>
+
+    <section id="ashes">
+        <h2>Ashes of War</h2>
+        <div id="ashes-container"></div>
+    </section>
+
+    <section id="bosses">
+        <h2>Bosses</h2>
+        <div id="bosses-container"></div>
+    </section>
+
+    <section id="classes">
+        <h2>Classes</h2>
+        <div id="classes-container"></div>
+    </section>
+
+    <section id="creatures">
+        <h2>Creatures</h2>
+        <div id="creatures-container"></div>
+    </section>
+
+    <section id="incantations">
+        <h2>Incantations</h2>
+        <div id="incantations-container"></div>
+    </section>
+
+    <section id="items">
+        <h2>Items</h2>
+        <div id="items-container"></div>
+    </section>
+
+    <section id="locations">
+        <h2>Locations</h2>
+        <div id="locations-container"></div>
+    </section>
+
+    <section id="NPCs">
+        <h2>NPCs</h2>
+        <div id="NPCs-container"></div>
+    </section>
+
+    <section id="shields">
+        <h2>Shields</h2>
+        <div id="shields-container"></div>
+    </section>
+
+    <section id="sorceries">
+        <h2>Sorceries</h2>
+        <div id="sorceries-container"></div>
+    </section>
+
+    <section id="spirits">
+        <h2>Spirits</h2>
+        <div id="spirits-container"></div>
+    </section>
+
+    <section id="talismans">
+        <h2>Talismans</h2>
+        <div id="talismans-container"></div>
+    </section>
+
+    <section id="weapons">
+        <h2>Weapons</h2>
+        <div id="weapons-container"></div>
+    </section>
+
+    <!-- Mute Button -->
+    <button id="mute-btn" class="mute-btn" aria-label="Mute">🔊</button>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
