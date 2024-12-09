@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/background.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 6rem;
+    /* Default size for desktop */
+    margin: 0px;
+    letter-spacing: 8px;
+    color: black;
+}
+
+.error-text,
+.description,
+.option {
+    font-size: 1.2rem;
+    /* Default size for desktop */
+    color: black;
+}
+
+/* Down Arrow Button */
+.arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    position: relative;
+    outline: none;
+}
+
+.arrow:hover {
+    color: gold;
+    /* Optional visual feedback for hover */
+}
+
+/* Hover Message */
+.hover-message {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+/* Speech Bubble Tail */
+.hover-message::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+/* Show the hover message on arrow hover */
+.arrow-container:hover .hover-message {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Coin Animation */
+.coin {
+    width: 30px;
+    height: 30px;
+    background: url(images/coin.gif) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    /* Ensures content fits within smaller screens */
+    box-sizing: border-box;
+}
+
+/* Animation for the arrow */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Tablets and Smaller Desktops */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+        letter-spacing: 6px;
+    }
+
+    .error-text,
+    .description,
+    .option {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets and Large Phones */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+
+    .error-text,
+    .description,
+    .option {
+        font-size: 0.9rem;
+    }
+
+    .hover-message {
+        position: absolute;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        bottom: 30%; /* Slightly lower for smaller screens */
+        max-width: 90%; /* Restrict width to fit the screen */
+        text-align: center; /* Center-align text for better layout */
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+
+    .error-text,
+    .description,
+    .option {
+        font-size: 0.8rem;
+    }
+
+    .content {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .hover-message {
+        position: absolute;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        bottom: 30%; /* Adjust for more space */
+        max-width: 90%; /* Ensure the bubble doesn't exceed screen width */
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
