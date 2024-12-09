@@ -136,11 +136,13 @@ h1 {
     h1 {
         font-size: 4rem;
         letter-spacing: 4px;
+        margin-top: 10px;
     }
 
     .error-text,
     .description,
     .option {
+        margin-top: 5px;
         font-size: 0.9rem;
     }
 
@@ -154,6 +156,10 @@ h1 {
         opacity: 1 !important;
         visibility: visible !important;
     }
+
+    .content {
+        margin-bottom: 65px;
+    }
 }
 
 /* Small Phones */
@@ -161,6 +167,7 @@ h1 {
     h1 {
         font-size: 3rem;
         letter-spacing: 3px;
+        margin-top: 5px;
     }
 
     .error-text,
@@ -172,6 +179,7 @@ h1 {
     .content {
         padding: 15px;
         border-radius: 8px;
+        margin-bottom: 80px;
     }
 
     .hover-message {
