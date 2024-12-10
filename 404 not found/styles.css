@@ -24,7 +24,8 @@ h1 {
 
 .error-text,
 .description,
-.option {
+.option,
+.information {
     font-size: 1.2rem;
     /* Default size for desktop */
     color: black;
@@ -50,7 +51,7 @@ h1 {
 /* Hover Message */
 .hover-message {
     position: absolute;
-    bottom: 30%;
+    bottom: 25%;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 15px;
@@ -126,7 +127,8 @@ h1 {
 
     .error-text,
     .description,
-    .option {
+    .option,
+    .information {
         font-size: 1rem;
     }
 }
@@ -141,7 +143,8 @@ h1 {
 
     .error-text,
     .description,
-    .option {
+    .option,
+    .information {
         margin-top: 5px;
         font-size: 0.9rem;
     }
@@ -172,7 +175,8 @@ h1 {
 
     .error-text,
     .description,
-    .option {
+    .option,
+    .information {
         font-size: 0.8rem;
     }
 
